@@ -1,0 +1,252 @@
+body {
+	
+	font-family: "eb-garamond";
+	background-color: whitesmoke;;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	font-style: normal;
+	font-weight: 200;
+}
+
+.menu{
+    height: 13vh;
+    background-color: white;
+    box-shadow: 0px 1px 5px 0px black;
+    display: flex;
+    z-index: 99999999 !important;
+}
+
+.left_menu{
+    flex: 1;
+}
+
+.left_menu img{
+    height: 10vh;
+    margin-top: 1.5vh;
+    margin-bottom: 1.5vh;
+    margin-left: 10vw;
+}
+
+.right_menu{
+    flex: 1.5;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10vw;
+}
+
+.right_menu a{
+    text-decoration: none;
+    color: #303080;
+    font-weight: bold;
+    margin-top: 2vh;
+    font-size: 1.25rem;
+    position: relative;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+    border-bottom: 3px solid white;
+}
+
+.table {
+    width: 90%;
+    margin: auto !important;
+    margin-top: 5vh !important;
+    text-align: center;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 10px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.container {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	height: 1000px;
+	background-color: #FFFFFF;
+}
+
+header {
+	width: 100%;
+    border-bottom: 1px solid #003872;
+    z-index: 99999999 !important;
+}
+
+.table thead tr {
+  background-color: #003872;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.table th,
+.table td {
+  padding: 12px 5px;
+}
+
+.table td a{
+  text-decoration: none;
+  color: black;
+}
+
+.table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.table tbody tr:last-of-type {
+  border-bottom: 2px solid #003872;
+}
+
+.table tbody tr:hover {
+    background-color: #f3f3f3;
+    color: #003872;
+}
+
+.valider{
+    background-color: #b4ffb1 !important;
+}
+
+.refuser{
+    background-color: #ffbcbc !important;
+}
+
+.new_message{
+    position: fixed;
+    display: block;
+    width: 3.5vw;
+    height: 7vh;
+    line-height: 3.5rem;
+    text-align: center;
+    background-color: #003872;
+    border-radius: 50%;
+	box-shadow: 0 1px 3px #141414;
+    right: 5vw;
+    bottom: 5vh;
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+.new_message:hover{
+    text-decoration: none;
+    transform: scale(1.2);
+}
+
+.new_message i{
+	font-size: 1.5rem;
+    margin-top: 2vh;
+    color: white;
+}
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    display: none;
+    opacity: 0;
+  overflow: auto;
+}
+
+.overlay:target {
+  display: block;
+  opacity: 1;
+  z-index: 10000;
+}
+
+.popup {
+  margin: auto !important;
+  padding-top: 3vh !important;
+  padding-bottom: 5vh;
+  margin-top: 5vh !important;
+  margin-bottom: 7vh;
+  background: #fff;
+  border: .15rem #003872 solid;
+  box-shadow: rgb(69, 69, 69) 0px 10px 6px -6px;
+  border-radius: 12px;
+  width: 50vw;
+  position: relative;
+  transition: all 3s ease-in-out;
+  text-align: center;
+}
+
+.popup i{
+  margin-top: 10vh;
+  font-size: 5rem;
+}
+
+.popup h2 {
+  margin-top: 5vh;
+  color:#003872;
+}
+
+.popup a{
+  margin-top: 1vh;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  display: inline-block;
+}
+
+.popup label{
+  font-size: 1.2rem;
+}
+
+.popup input, .popup select{
+  margin-top: 2vh;
+  margin-bottom: 4vh;
+  font-size: 1.2rem;
+  padding-top: .75vh;
+  padding-bottom: .75vh;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  background-color: rgba(227, 227, 227, 1);
+  border: none;
+  box-shadow: rgb(69, 69, 69) 0px 10px 6px -6px;
+}
+
+.popup textarea{
+    resize: none;
+    margin-top: 2vh;
+    margin-bottom: 4vh;
+    font-size: 1.2rem;
+    padding-top: .75vh;
+    padding-bottom: .75vh;
+    background-color: rgba(227, 227, 227, 1);
+    border: none;
+    box-shadow: rgb(69, 69, 69) 0px 10px 6px -6px;
+}
+
+.popup .close {
+  position: absolute;
+  top: 2vh;
+  right: 3vw;
+  transition: all 200ms;
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #141414;
+}
+
+.popup .close:hover {
+  color: #3E5062;
+}
+
+.popup .content {
+  overflow: auto;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
